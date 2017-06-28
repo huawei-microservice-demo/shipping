@@ -1,2 +1,2 @@
 # shipping
-java - servicecomb shipping micro service
+servicecomb shipping micro service
