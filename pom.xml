@@ -45,6 +45,21 @@
 		</dependencies>
 	</dependencyManagement>
     <dependencies>
+    	 <dependency>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>foundation-auth</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>foundation-config-cc</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>cse-handler-tracing</artifactId>
+            <version>0.1</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-rest</artifactId>
