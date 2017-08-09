@@ -11,11 +11,11 @@
 	<name>shipping</name>
 	<description>Shipping service for microservices-demo application</description>
 
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.4.0.RELEASE</version>
-	</parent>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.5.RELEASE</version>
+    </parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,63 +35,41 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
-			<dependency>
-				<groupId>io.servicecomb</groupId>
-				<artifactId>java-chassis-parent</artifactId>
-				<version>0.1.1-SNAPSHOT</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	<dependencies>
+	<dependencies>	
 		<dependency>
-			<groupId>com.huawei.paas.cse</groupId>
-			<artifactId>foundation-auth</artifactId>
-			<version>0.1</version>
-		</dependency>
-	    <dependency>
-            <groupId>io.servicecomb</groupId>
-            <artifactId>cse-handler-performance-stats</artifactId>
-            <version>0.1.1-SNAPSHOT</version>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>foundation-auth</artifactId>
+            <version>0.1</version>
         </dependency>
-		<dependency>
-			<groupId>com.huawei.paas.cse</groupId>
-			<artifactId>foundation-config-cc</artifactId>
-			<version>0.1</version>
-		</dependency>
-		<dependency>
-			<groupId>com.huawei.paas.cse</groupId>
-			<artifactId>cse-handler-tracing</artifactId>
-			<version>0.1</version>
-		</dependency>
+        <dependency>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>foundation-config-cc</artifactId>
+            <version>0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.huawei.paas.cse</groupId>
+            <artifactId>cse-handler-tracing</artifactId>
+            <version>0.1</version>
+        </dependency>	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-rest</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>io.servicecomb</groupId>
+			<artifactId>cse-handler-performance-stats</artifactId>
+			<version>0.1.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+        </dependency>
 		<dependency>
 			<groupId>io.servicecomb</groupId>
 			<artifactId>spring-boot-starter-provider</artifactId>
 			<version>0.1.1-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-zipkin</artifactId>
-			<version>1.1.0.RELEASE</version>
-		</dependency>
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient_spring_boot</artifactId>
-			<version>${prometheus.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>io.prometheus</groupId>
-			<artifactId>simpleclient_hotspot</artifactId>
-			<version>${prometheus.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>io.prometheus</groupId>
@@ -99,17 +77,20 @@
 			<version>${prometheus.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.data</groupId>
-			<artifactId>spring-data-rest-hal-browser</artifactId>
-		</dependency>
-		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-amqp</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-test</artifactId>
+    		<version>4.3.2.RELEASE</version>
+    		<scope>test</scope>
+		</dependency>
+		<dependency>
+    		<groupId>junit</groupId>
+    		<artifactId>junit</artifactId>
+    		<version>4.11</version>
+    		<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.openpojo</groupId>

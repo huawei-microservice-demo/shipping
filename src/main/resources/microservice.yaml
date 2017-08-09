@@ -20,8 +20,10 @@ cse:
       Provider:
         default: bizkeeper-provider,perf-stats
       Consumer:
-        default: bizkeeper-consumer,perf-stats
+        default: loadbalance,bizkeeper-consumer,perf-stats
 
 ssl.sc.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud
-ssl.apiserver.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud 
+ssl.apiserver.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud
 ssl.monitor.consumer.sslOptionFactory: com.huawei.paas.foundation.auth.SSLOptionFactoryCloud 
+
+
